@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            height: auto;
+            width: 50%;
+            border-radius: 20px;
+            border: solid grey;
+        }
+        .container{
+            background-image: url(universe-8153526_1280.jpg);
+            text-align: center;
+            height: 300px;
+            margin-bottom: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .heading{
+            padding-top: 70px;
+            color: aliceblue;
+        }
+        .paragraph{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading"> Multimedia webpage</h1>
+        <p class="paragraph"> This is our background image container</p>
+    </div>
+    
+    <img src="universe-8153526_1280.jpg" alt="" height="auto"
+    width="50%"
+    loading="lazy" class="image">
+    <figure>
+        <img src="universe-8153526_1280.jpg" alt="nature"
+        height="auto" 
+        width="50%"
+        loading="lazy"
+        title="nature">
+        <figcaption> unique </figcaption>
+    </figure>
+    <div class="Multimedia">
+    <img src="switzerland-9287004_1280.jpg"  alt="nature"
+    loading="lazy" class="image" title="nature">
+    <h2> Videos</h2>
+    <video controls height="auto" width="60%" autoplay loop muted>
+        <source src="88207-602915574_small.mp4" type="video/mp4">
+    </video>
+    <h2> audio </h2>
+    <audio controls>
+        <source src="lost-in-dreams-abstract-chill-downtempo-cinematic-future-beats-270241.mp3" type="audio/mp3">
+    </audio>
+    </div>
+</body>
+</html>
