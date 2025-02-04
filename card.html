@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+            border-radius: 20px;
+            position: relative;
+            transition: all 2s;
+            transform-style: preserve-3d;
+        }
+        .cardface{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+        }
+        .back{
+            transform: rotateY(180deg);
+            background-color: pink;
+            color: black;
+            border-radius: 20px;
+        }
+        .main:hover{
+            transform: rotateY(180deg);
+        }
+        .front{
+            background-color: lightblue;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="front cardface">Hover To Disclose</div>
+        <div class="back cardface">Hey There!!</div>
+    </div>
+</body>
+</html>
