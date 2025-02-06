@@ -1,0 +1,84 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: rgb(34, 31, 31);
+    color: white;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+li{
+    list-style-type: none;
+}
+.navbar li a{
+    width: 30vh;
+    padding-left: 15px;
+    margin: 15px;
+    }
+    .content h1{
+        background-color: rgb(28, 180, 28);
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        font-family: "Work Sans", serif;
+        width: 160vh;
+        padding: 10px;
+        margin: 15px;
+    }
+.navbar h2{
+    margin: 15px;
+    padding-bottom: 20px;
+}
+.container{
+   display: flex;
+}
+.song{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(87, 82, 82);
+    padding: 10px;
+    border-radius: 10px;
+}
+.song-row{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    border: 1px solid rgb(87, 84, 84);
+    background-color: rgb(95, 91, 91);
+    padding: 20px;
+    border-radius: 10px;
+   /* gap: 20px; */
+   margin: 15px;
+   flex: 1;
+}
+.navbar{
+    height: 100vh;
+    background-color: rgb(24, 22, 22);
+}
+.music{
+    
+    filter: invert(1);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.music2{
+    filter: invert(1);
+    justify-content: center;
+    display: flex;
+}
+.content2{
+    background-color: rgb(34, 31, 31);
+}
+.symbol{
+    background-color: rgb(28, 180, 28);
+    border-radius: 50px;
+    padding: 5px;
+}
