@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="addBox()">Add a new Box</button>
+    <div id="container"></div>
+
+    <script>
+       function addBox(){
+          
+       let box = document.createElement('span')
+       box.classList.add('box') 
+       document.querySelector('#container').appendChild(box)
+       }
+
+        // let a = document.getElementById('container')
+        // let b = document.createElement('p')
+        // b.innerHTML='This is my paragraph'
+        // a.appendChild(b)
+        // console.log(b);
+        
+    </script>
+</body>
+</html>
