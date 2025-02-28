@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p>Rock papper scissors</p>
+    <button onclick="playGame('Rock')">Rock</button>
+    <button onclick="playGame('Paper')">Paper</button>
+    <button onclick="playGame('Scissors')">Scissors</button>
+
+    <script>
+      const score = {
+        win:0,
+        lose:0,
+        tie:0
+      }
+      function playGame(playerMove) {
+        let computerMove = pickComputerMove();
+        let result = "";
+
+        if (playerMove == "Rock") {
+          if (computerMove == "Rock") {
+            result = "tie";
+          }
+          if (computerMove == "Paper") {
+            result = "lose";
+          }
+
+          if (computerMove == "Scissors") {
+            result = "win";
+          }
+        } 
+        else if (playerMove == "Paper") {
+          if (computerMove == "Rock") {result = "win";
+        } else if (computerMove == "Paper") {
+          result = "tie";
+        } else if (computerMove == "Scissors") {
+          result = "lose";}
+          
+        } else if (playerMove == "Scissors") {
+          if (computerMove == "Rock") {
+            result = "lose";
+          }
+
+          if (computerMove == "Paper") {
+            result = "win";
+          }
+
+          if (computerMove == "Scissors") {
+            result = "tie";
+          }
+        }
+        console.log(result, computerMove);
+        if (result === "win"){
+          score.win+=1
+        }
+        else if (result ==="lose"){
+          score.lose+=1
+        }
+        else {
+          score.tie+=1
+        }
+
+        alert(
+          `you chose ${playerMove}. Computer chose ${computerMove}. Result: ${result}
+          win : ${score.win} lose : ${score.lose} tie : ${score.tie}`
+        );
+      }
+
+      function pickComputerMove() {
+        let randomNumber = Math.random();
+        let computerMove = "";
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+          computerMove = "Rock";
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+          computerMove = "Paper";
+        } else {
+          computerMove = "Scissors";
+        }
+
+        return computerMove;
+      }
+    </script>
+  </body>
+</html>
